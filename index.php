@@ -57,7 +57,7 @@ if(isset($_POST['save'])){
         <h1>PDO with MySQL</h1>
       </header>    
 
-      <div class="row">
+      <div>
         <form method="post">
             <input name="first" placeholder="First Name">
             <input name="last" placeholder="Last Name">
