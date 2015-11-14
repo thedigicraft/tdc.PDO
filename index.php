@@ -5,7 +5,7 @@ try {
   $name = 'pdo'; // Database name
   $user = 'pdo'; // Username
   $pass = 'thepassword'; // Password
-  $dbc = new PDO("mysql:host=$host;dbname=$name", "$user", "$pass");
+  $dbc = new PDO("mysql:host=$host;dbname=$name", $user, $pass);
 }
 catch(PDOException $e) {
     echo $e->getMessage();
