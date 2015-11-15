@@ -15,7 +15,7 @@ catch(PDOException $e) {
 if(isset($_POST['add'])){
   
   # Prepare statement with named placeholders:
-  $stmt = $dbc->prepare("INSERT INTO users ( first,last,website ) values ( :first, :last, :website )");
+  $stmt = $dbc->prepare("INSERT INTO users ( first,last,website ) VALUES ( :first, :last, :website )");
     
   # Assign values to named placeholders  
   $stmt->bindParam(':first', $_POST['first']);
